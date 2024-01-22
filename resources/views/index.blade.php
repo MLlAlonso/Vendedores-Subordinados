@@ -21,25 +21,22 @@
             </div>
 
             <div class="content">
-               <a href="{{ route('subordinados') }}">
-                 <span class="title" class="nombre" id="nombre">{{ $vendedor->nombre }} {{ $vendedor->apellidoPaterno }} {{ $vendedor->apellidoMaterno }}</span>
-               </a>
-           
-               <p class="desc" name="celular" id="celular">
-                   <span class="fa-solid fa-mobile-button"></span> {{ $vendedor->celular }}
-               </p>
-               <p class="desc" name="telefonoDeCasa" id="telefonoDeCasa">
-                   <span class="fa-solid fa-square-phone"></span> {{ $vendedor->telefonoDeCasa }}
-               </p>
-               <p class="desc" name="email" id="email">
-                   <span class="fa-solid fa-envelope"></span> {{ $vendedor->email }}
-               </p>
-               <p class="desc" name="domicilio" id="domicilio">
-                   <span class="fa-solid fa-house"></span> {{ $vendedor->domicilio }}
-               </p>
+                <span class="title nombre" id="nombre">{{ $vendedor->nombre }} {{ $vendedor->apellidoPaterno }} {{ $vendedor->apellidoMaterno }}</span>
+                <p class="desc" name="celular" id="celular">
+                    <span class="fa-solid fa-mobile-button"></span> {{ $vendedor->celular }}
+                </p>
+                <p class="desc" name="telefonoDeCasa" id="telefonoDeCasa">
+                    <span class="fa-solid fa-square-phone"></span> {{ $vendedor->telefonoDeCasa }}
+                </p>
+                <p class="desc" name="email" id="email">
+                    <span class="fa-solid fa-envelope"></span> {{ $vendedor->email }}
+                </p>
+                <p class="desc" name="domicilio" id="domicilio">
+                    <span class="fa-solid fa-house"></span> {{ $vendedor->domicilio }}
+                </p>
 
                <div class="buttons">
-                <a class="action" href="{{ route('subordinados') }}"> Ver más <span aria-hidden="true"> → </span> </a>
+                <a class="action" href="{{ route('subordinados.show', ['id' => $vendedor->id]) }}"> Ver más <span aria-hidden="true"> → </span> </a>
 
                 <a class="btnEdit" href="{{ route('vendedor.edit', ['id' => $vendedor->id]) }}">
                     Edit 

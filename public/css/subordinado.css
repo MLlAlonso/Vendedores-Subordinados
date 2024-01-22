@@ -1,0 +1,115 @@
+.level1, .level1 span{
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: #332F2C;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.levelLabel{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: #785940;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subordinadosList{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*Card vendedor*/
+.card {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid;
+    margin-right: 3rem;
+  }
+  
+  .card a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 1.1rem;
+  }
+  
+  .decoration {
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    background-color: #004c57;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .decorationSub{
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    background-color: #AC6C39;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .btnDelete span{
+    font-size: 20px;
+    color: #fff;
+    cursor:pointer;
+  }
+  
+  .title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #1C7B8A;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .desc span{
+    color: black;
+    font-size: 1.3rem;
+    padding-right: 10px;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #4BAEBD;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }

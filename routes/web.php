@@ -8,7 +8,7 @@ use App\Http\Controllers\JerarquiaController;
 //Url´s havia las vistas
 Route::view('/', 'index')->name('index');
 Route::view('/subordinados', 'subordinados')->name('subordinados');
-Route::view('/addSubordinado', 'registroSubordinados')->name('registroSubordinados');
+Route::view('/registroSubordinados', 'registroSubordinados')->name('registroSubordinados');
 Route::view('/registroVendedores', 'registroVendedores')->name('registroVendedores');
 
 //Url correspondientes al controlador de Vendedor
@@ -21,3 +21,5 @@ Route::put('/vendedor/editar/{id}', [VendedorController::class, 'update'])->name
 
 //Url correspondientes al controlador de Subordinado
 Route::get('/subordinados/{id}', [SubordinadoController::class, 'showSubordinados'])->name('subordinados.show');
+Route::get('/vendedor/{id}/addSubordinado', [SubordinadoController::class, 'showAddSubordinadoForm'])->name('vendedor.addSubordinadoForm');
+Route::post('/subordinado/add', [SubordinadoController::class, 'addSubordinado'])->name('subordinado.add');
